@@ -298,6 +298,14 @@ public class  CreateModConfig {
                         .setSaveConsumer(value -> config.preventImmatureAmethystBreaking = value)
                         .build())
 
+                .addEntry(entryBuilder.startBooleanToggle(
+                                Text.translatable("option.preventer.preventBreakingWithWeapon"),
+                                config.preventBreakingWithWeapon)
+                        .setDefaultValue(false)
+                        .setTooltip(Text.translatable("tooltip.preventer.preventBreakingWithWeapon"))
+                        .setSaveConsumer(value -> config.preventBreakingWithWeapon = value)
+                        .build())
+
                 // Placing
                 .addEntry(entryBuilder.startTextDescription(
                                 Text.translatable("text.preventer.placingCategory"))
@@ -465,6 +473,14 @@ public class  CreateModConfig {
                         .setSaveConsumer(value -> config.preventRenamedItemDropping = value)
                         .build())
 
+                .addEntry(entryBuilder.startBooleanToggle(
+                                Text.translatable("option.preventer.preventSwimming"),
+                                config.preventSwimming)
+                        .setDefaultValue(false)
+                        .setTooltip(Text.translatable("tooltip.preventer.preventSwimming"))
+                        .setSaveConsumer(value -> config.preventSwimming = value)
+                        .build())
+
                 //.addEntry(entryBuilder.startBooleanToggle(
                 //                Text.translatable("option.preventer.preventEnchantedItemBurning"),
                 //                config.preventEnchantedItemBurning)
@@ -537,6 +553,14 @@ public class  CreateModConfig {
                         .setDefaultValue(false)
                         .setTooltip(Text.translatable("tooltip.preventer.fullNeutralMobAttackingPrevention"))
                         .setSaveConsumer(value -> config.fullNeutralMobAttackingPrevention = value)
+                        .build())
+
+                .addEntry(entryBuilder.startBooleanToggle(
+                                Text.translatable("config.preventer.neutralMobAttackingPiglinException"),
+                                config.neutralMobAttackingPiglinException)
+                        .setDefaultValue(false)
+                        .setTooltip(Text.translatable("tooltip.preventer.neutralMobAttackingPiglinException"))
+                        .setSaveConsumer(value -> config.neutralMobAttackingPiglinException = value)
                         .build())
 
                 .addEntry(entryBuilder.startBooleanToggle(
@@ -823,6 +847,13 @@ public class  CreateModConfig {
                         .setSaveConsumer(value -> config.preventImmatureAmethystBreaking_msg = value)
                         .build())
 
+                .addEntry(entryBuilder.startBooleanToggle(
+                                Text.translatable("option.preventer.preventBreakingWithWeapon"),
+                                config.preventBreakingWithWeapon_msg)
+                        .setDefaultValue(false)
+                        .setSaveConsumer(value -> config.preventBreakingWithWeapon_msg = value)
+                        .build())
+
                 // Placing
                 .addEntry(entryBuilder.startTextDescription(
                                 Text.translatable("text.preventer.placingCategory"))
@@ -969,6 +1000,13 @@ public class  CreateModConfig {
                                 config.preventRenamedItemDropping_msg)
                         .setDefaultValue(false)
                         .setSaveConsumer(value -> config.preventRenamedItemDropping_msg = value)
+                        .build())
+
+                .addEntry(entryBuilder.startBooleanToggle(
+                                Text.translatable("option.preventer.preventSwimming"),
+                                config.preventSwimming_msg)
+                        .setDefaultValue(false)
+                        .setSaveConsumer(value -> config.preventSwimming_msg = value)
                         .build())
 
                 .addEntry(entryBuilder.startBooleanToggle(

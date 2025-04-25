@@ -99,6 +99,8 @@ public class PreventerConfig implements ConfigData {
     public boolean preventSaplingBreaking_msg = false;
     public boolean preventImmatureAmethystBreaking = false;
     public boolean preventImmatureAmethystBreaking_msg = false;
+    public boolean preventBreakingWithWeapon = false;
+    public boolean preventBreakingWithWeapon_msg = false;
 
     // Placing
     public boolean preventCoralPlace = false;
@@ -137,6 +139,7 @@ public class PreventerConfig implements ConfigData {
     public boolean preventNeutralMobAttacking = false;
     public boolean preventNeutralMobAttacking_msg = false;
     public boolean fullNeutralMobAttackingPrevention = false;
+    public boolean neutralMobAttackingPiglinException = false;
     public boolean preventDolphinAttacking = false;
     public boolean preventDolphinAttacking_msg = false;
 
@@ -148,6 +151,8 @@ public class PreventerConfig implements ConfigData {
     public boolean preventToolDropping_msg = false;
     public boolean preventRenamedItemDropping = false;
     public boolean preventRenamedItemDropping_msg = false;
+    public boolean preventSwimming = false;
+    public boolean preventSwimming_msg = false;
     //public boolean preventEnchantedItemBurning = false;
     //public boolean preventEnchantedItemBurning_msg = false;
     public boolean hideOffhand = false;
