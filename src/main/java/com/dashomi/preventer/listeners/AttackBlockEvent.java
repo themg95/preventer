@@ -6,6 +6,7 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.registry.tag.EnchantmentTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -24,7 +25,7 @@ public class AttackBlockEvent {
 
             if (PreventerClient.config.preventBreakingWithWeapon) {
                 Item item = playerEntity.getStackInHand(hand).getItem();
-                if (item instanceof SwordItem || item instanceof TridentItem || item instanceof MaceItem) {
+                if (item.getDefaultStack().isIn(ItemTags.SWORDS) || item instanceof TridentItem || item instanceof MaceItem) {
                     if (PreventerClient.config.preventBreakingWithWeapon_msg) {
                         playerEntity.sendMessage(Text.translatable("config.preventer.preventBreakingWithWeapon.text"), true);
                     }
@@ -108,7 +109,7 @@ public class AttackBlockEvent {
 
             if (PreventerClient.config.preventEnderChestBreaking) {
                 if (targetBlock instanceof EnderChestBlock) {
-                    if (playerEntity.getMainHandStack().getItem() instanceof PickaxeItem) {
+                    if (playerEntity.getMainHandStack().getItem().getDefaultStack().isIn(ItemTags.PICKAXES)) {
                         if (!EnchantmentHelper.hasAnyEnchantmentsIn(playerEntity.getMainHandStack(), EnchantmentTags.PREVENTS_BEE_SPAWNS_WHEN_MINING)) {
                             if (PreventerClient.config.preventEnderChestBreaking_msg) {
                                 playerEntity.sendMessage(Text.translatable("config.preventer.preventEnderChestBreaking.text"), true);

@@ -126,7 +126,7 @@ public class AttackEntityEvent {
                 } else {
                     if (isNeutralMob(entity) && (!(entity instanceof PiglinEntity)
                             || !PreventerClient.config.neutralMobAttackingPiglinException
-                            || PiglinBrain.wearsGoldArmor(playerEntity))) {
+                            || PiglinBrain.isWearingPiglinSafeArmor(playerEntity))) {
 
                         if (PreventerClient.config.preventNeutralMobAttacking_msg) {
                             playerEntity.sendMessage(Text.translatable("config.preventer.preventNeutralMobAttacking.text"), true);
