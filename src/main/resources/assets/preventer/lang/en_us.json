@@ -165,6 +165,8 @@
   "config.preventer.preventNeutralMobAttacking.text": "§4Neutral mob hitting prevented§4",
   "config.preventer.fullNeutralMobAttackingPrevention": "Full neutral mob hitting prevention",
   "tooltip.preventer.fullNeutralMobAttackingPrevention": "additionally prevents you from attacking spiders and endermen",
+  "config.preventer.neutralMobAttackingPiglinException": "Neutral mob piglin exception",
+  "tooltip.preventer.neutralMobAttackingPiglinException": "Allow hitting piglins if you're not wearing gold armor",
 
   "option.preventer.preventSuspiciousBlockBreaking": "Prevent suspicious block breaking",
   "tooltip.preventer.preventSuspiciousBlockBreaking": "Prevents you from breaking suspicious sand and gravel",
@@ -253,6 +255,14 @@
   "option.preventer.preventImmatureAmethystBreaking": "Prevent immature amethyst breaking",
   "tooltip.preventer.preventImmatureAmethystBreaking": "Prevents you from breaking immature amethyst crystals",
   "config.preventer.preventImmatureAmethystBreaking.text": "§4Immature amethyst breaking prevented§4",
+
+  "option.preventer.preventBreakingWithWeapon": "Prevent breaking with weapons",
+  "tooltip.preventer.preventBreakingWithWeapon": "Prevents you from breaking blocks with a sword, trident or mace",
+  "config.preventer.preventBreakingWithWeapon.text": "§4Breaking with weapon prevented§4",
+
+  "option.preventer.preventSwimming": "Prevent swimming",
+  "tooltip.preventer.preventSwimming": "Prevents you from sprinting while underwater",
+  "config.preventer.preventSwimming.text": "§4Swimming prevented§4",
 
   "option.preventer.hideOffhand": "Hide specified offhand items",
   "option.preventer.unhideOffhandOnUse": "Unhide offhand item on use",
